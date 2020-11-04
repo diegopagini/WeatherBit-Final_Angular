@@ -1,0 +1,8 @@
+<section class="container main" id="main">
+	<app-search-city (cityStringEmit)="cityStringEmiting($event)"></app-search-city>
+
+	<div class="container weather-show">
+		<app-weather-data (emitTemp)="emitingTemp($event)" [newCity]="searchingCity" [codigoPostal]="codigoPostalDesdeElPadre"></app-weather-data>
+		<app-view-news *ngIf="currentTemp" [currentTemp]="currentTemp"></app-view-news>
+	</div>
+</section> 

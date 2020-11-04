@@ -1,0 +1,9 @@
+<div class="currenData" *ngIf="currentData">
+    <h1>{{ currentData.city_name }}</h1>
+    <h2>{{ currentData.app_temp }}º</h2>
+    <div class="info valign-wrapper"><img src="../../../../assets/img/024-wind.png" alt="wind">Viento: {{ currentData.wind_spd | number }} Km/h </div>
+    <div class="info valign-wrapper"><img src="../../../../assets/img/003-rain.png" alt="rh">Humedad: {{ currentData.rh }} % </div>
+    <div class="info valign-wrapper"><img src="../../../../assets/img/028-clouds.png" alt="clouds">Nubosidad: {{ currentData.clouds }} % </div>
+    <div class="info valign-wrapper"><img src="../../../../assets/img/021-sunrise.png" alt="sunrise">Amanecer: {{ currentData.sunrise }} hs</div>
+    <div class="info valign-wrapper"><img src="../../../../assets/img/033-sunset.png" alt="sunset">Puesta del Sol: {{ currentData.sunset }} hs</div>
+</div>
