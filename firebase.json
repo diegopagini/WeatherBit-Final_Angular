@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/weatherbit-angular",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
